@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <nav class="desktop">
+        <div class="home">
+            <a id="medpal_icon" href="index.html"></a>
+        </div>
+        <div class="nav">
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./contacto.html">Contacto</a>
+            <a href="#">Ingresar</a>
+        </div>
+    </nav>
+
+    <nav class="mobile">
+        <a class="navbar-brand" href="index.html"></a>
+        <a class="navbar-icon" onclick="toggleNavbar()">
+            &#9776;
+        </a>
+        <div class="navbar-links" id="navbarLinks">
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./contacto.html">Contacto</a>
+            <a href="#ingresar">Ingresar</a>
+        </div>
+    </nav>
+
+    <div class="space_nav"></div>
+
+    <div class="abus_section1">
+        <div class="about_us">
+            <h1>ACERCA DE NOSOTROS</h1>
+            <h3>Somos un equipo de profesionales que entendemos el gran
+                valor de tu tiempo, es por eso que pensando en tus
+                necesidades hemos creado MEDPAL, un sitema que brinda
+                al médico las más modernas herramientas tecnológicas
+                para otimizar, organizar y simplificar su trabajo; así como
+                proporcionar al cliente una manera fácil, cómoda y rápida
+                de acceder a un servicio de salud</h3>
+            <div class="features6_container">
+                <div class="features6">
+                    <div id="icon_features6_1"></div>
+                    <div class="text_features6">
+                        TU INFORMACIÓN DISPONIBLE 24/7
+                    </div>
+                </div>
+                <div class="features6">
+                    <div id="icon_features6_2"></div>
+                    <div class="text_features6">
+                        FÁCIL Y RÁPIDO ACCESO A TUS DATOS
+                    </div>
+                </div>
+                <div class="features6">
+                    <div id="icon_features6_3"></div>
+                    <div class="text_features6">
+                        SEGURIDAD Y CONFIDENCIALIDAD EN
+                        TODA TU INFORMACIÓN
+                    </div>
+                </div>
+            </div>
+            <div id="img_about_us" class="img"></div>
+        </div>
+    </div>
+
+    <div id="form" class="form even">
+        <h3>"¿Estás listo para impulsar tu crecimiento?, ¡Únete ya a nuestra plataforma!"</h3>
+        <h1>REGISTRO</h1>
+        <form>
+            <label for="nombre">Nombre de usuario:</label><br>
+            <input type="text" id="nombre" name="nombre"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="especialidad">Especialidad:</label><br>
+            <input type="text" id="especialidad" name="especialidad"><br>
+
+            <label for="contraseña">Contraseña:</label><br>
+            <input type="password" id="contraseña" name="contraseña"><br>
+
+            <br><br>
+
+            <div class="check">
+                <input type="checkbox" id="terminos" name="terminos" value="aceptado">
+                <label for="terminos">
+                    <a href="https://medpal.com.ec/terminosCondiciones">
+                        Acepto términos y condiciones
+                    </a>
+                </label>
+            </div>
+
+            <br><br>
+
+            <button class="registrarse" type="submit">Enviar</button>
+
+        </form>
+    </div>
+
+</body>
+
+<script>
+    function toggleNavbar() {
+        var navbarLinks = document.getElementById("navbarLinks");
+        navbarLinks.classList.toggle("show");
+    }
+</script>
+
+</html>

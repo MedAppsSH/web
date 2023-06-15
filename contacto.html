@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <nav class="desktop">
+        <div class="home">
+            <a id="medpal_icon" href="index.html"></a>
+        </div>
+        <div class="nav">
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./contacto.html">Contacto</a>
+            <a href="#">Ingresar</a>
+        </div>
+    </nav>
+
+    <nav class="mobile">
+        <a class="navbar-brand" href="index.html"></a>
+        <a class="navbar-icon" onclick="toggleNavbar()">
+            &#9776;
+        </a>
+        <div class="navbar-links" id="navbarLinks">
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./contacto.html">Contacto</a>
+            <a href="#ingresar">Ingresar</a>
+        </div>
+    </nav>
+
+    <div class="space_nav"></div>
+
+    <div class="contact_section even">
+        <div class="contact">
+            <form>
+                <h1>Contacto</h1>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre"><br>
+    
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+    
+                <label for="telefono">Teléfono:</label><br>
+                <input type="phone" id="telefono" name="telefono"><br>
+    
+                <label for="ciudad">Ciudad:</label><br>
+                <input type="list" id="city" name="city"><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea name="message" id="message"  rows="4"></textarea>
+    
+                <br><br>
+    
+                <div class="check">
+                    <input type="checkbox" id="terminos" name="terminos" value="aceptado">
+                    <label for="terminos">
+                        <a href="https://medpal.com.ec/terminosCondiciones">
+                            Acepto términos y condiciones
+                        </a>
+                    </label>
+                </div>
+    
+                <br><br>
+    
+                <button class="registrarse" type="submit">Enviar</button>
+    
+            </form>
+            <div id="img_contact" class="img"></div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    function toggleNavbar() {
+        var navbarLinks = document.getElementById("navbarLinks");
+        navbarLinks.classList.toggle("show");
+    }
+</script>
+
+</html>

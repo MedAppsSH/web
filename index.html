@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body onload="carrusel()">
+
+    <nav class="desktop">
+        <div class="home">
+            <a id="medpal_icon" href="index.html"></a>
+        </div>
+        <div class="nav">
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./contacto.html">Contacto</a>
+            <a href="#">Ingresar</a>
+        </div>
+    </nav>
+
+    <nav class="mobile">
+        <a class="navbar-brand" href="index.html"></a>
+        <a class="navbar-icon" onclick="toggleNavbar()">
+            &#9776;
+        </a>
+        <div class="navbar-links" id="navbarLinks">
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./contacto.html">Contacto</a>
+            <a href="#ingresar">Ingresar</a>
+        </div>
+    </nav>
+
+    <div class="section1 even">
+        <div class="hero">
+            <div class="medpal_logo_h"></div>
+            <div class="medpal_logo_v"></div>
+            <h1>Tu plataforma integral de salud</h1>
+                <ul>
+                    <li>Gestor de consultorio</li>
+                    <li>Directorio médico</li>
+                    <li>Campañas médicas</li>
+                </ul>
+                <button class="registrarse" onclick="location.href='#form'">Regístrate</button>
+        </div>
+    </div>
+    <div class="section2 even">
+        <div class="features1 regular_container">
+            <h1>Con MedPal obtendrás</h1>
+            <h2>Una variedad de herramientas que facilitan la gestión de tu consultorio,
+                además de una innovadora plataforma móvil donde podrás administrar tu agenda fácilmente
+            </h2>
+            <div id="img_feature1" class="img"></div>
+        </div>
+    </div>
+
+    <div class="section3 even">
+        <h1 class="features_app_elements">Características especiales de la App</h1>
+        <h1 class="features_web_elements">Características especiales de la Web</h1>
+
+        <div class="carrusel">
+        
+            <div class="features_carrusel">
+                <div class="text_features_web features_web_elements">
+                    <h4>Vademécum en recetario</h4>
+                    <h3>Contraindicaciones, dosificación, función y más</h3>
+                    <h4>Campañas médicas</h4>
+                    <h3>Un simple pero potente sistema de difusión de tus
+                        servicios médicos a los usuarios de la plataforma</h3>
+        
+                </div>
+                <div class="text_features_app features_app_elements">
+                    <h4>Directorio médico</h4>
+                    <h3>Búsqueda avanzada para encontrar el
+                        servicio médico que necesitas y
+                        realizar reservas online</h3>
+                    <h4>Manejo de citas</h4>
+                    <h3>Toda la información necesaria
+                        para que tus pacientes
+                        reserven citas y tú las
+                        administres</h3>
+                </div>
+            </div>
+        
+            <div class="img_carrusel_app features_app_elements"></div>
+            <div class="img_carrusel_web features_web_elements"></div>
+        
+            <div class="features_carrusel">
+                <div class="text_features_web features_web_elements">
+                    <h4>Manejo de citas</h4>
+                    <h3>Administra con facilidad la gestión de tus citas</h3>
+                    <h4>Módulo de Secretaría</h4>
+                    <h3>Manejo de citas, caja chica, configuración de horarios,
+                        y más herramientas para optimizar la gestión de consultorio
+                        por medio de tu secretaria</h3>
+                </div>
+                <div class="text_features_app features_app_elements">
+                    <h4>Recordatorios</h4>
+                    <h3>Recordatorios para tus pacientes de citas y toma de medicamentos</h3>
+                    <h4>Beneficios exclusivos Medpal</h4>
+                    <h3>Precios preferenciales tanto en consultas como en
+                        servicios de salud específicos</h3>
+                </div>
+            </div>
+        </div>
+        <div class="carrusel_buttons">
+            <div id="carrbtn1"></div>
+            <div id="carrbtn2"></div>
+        </div>
+    </div>
+
+    <div class="section4 even">
+        <div class="features3 regular_container">
+            <h1>¡Descarga Ya!</h1>
+            <h2>Y aprovecha todos los beneficios que tenemos para ti</h2>
+        </div>
+        <div class="stores">
+            <div class="playstore"></div>
+            <div class="appstore"></div>
+        </div>
+    </div>
+
+    <div class="section5 odd">
+        <div class="features4">
+            <h1>Herramientas del gestor médico</h1>
+            <div class="gestor_features">
+                <div class="historial">
+                    <div id="img_gestor1"></div>
+                    <h3>Historial Clínico</h3>
+                    <ul>
+                        <li>Información guardada en la nube</li>
+                        <li>Recetario con vademécum online/offline</li>
+                    </ul>
+                </div>
+                <div class="consultorios">
+                    <div id="img_gestor2"></div>
+                    <h3>Manejo de consultorios</h3>
+                    <ul>
+                        <li>Maneja hasta 3 consultorios</li>
+                        <li>Horarios, ubicación, servicios</li>
+                    </ul>
+                </div>
+                <div class="herramientas">
+                    <div id="img_gestor3"></div>
+                    <h3>Herramientas Especializadas</h3>
+                    <ul>
+                        <li>Respaldo de resultado de exámenes</li>
+                        <li>Registro de vacunación</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="img_feature4_container">
+            <img id="img_feature4" src="./src/gestor_devices.png" alt="">
+        </div>
+    </div>
+
+    <div id="form" class="form even">
+        <h3>"¿Estás listo para impulsar tu crecimiento?, ¡Únete ya a nuestra plataforma!"</h3>
+        <h1>REGISTRO</h1>
+        <form>
+            <label for="nombre">Nombre de usuario:</label><br>
+            <input type="text" id="nombre" name="nombre"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="especialidad">Especialidad:</label><br>
+            <input type="text" id="especialidad" name="especialidad"><br>
+
+            <label for="contraseña">Contraseña:</label><br>
+            <input type="password" id="contraseña" name="contraseña"><br>
+
+            <br><br>
+
+            <div class="check">
+                <input type="checkbox" id="terminos" name="terminos" value="aceptado">
+                <label for="terminos">
+                    <a href="https://medpal.com.ec/terminosCondiciones">
+                        Acepto términos y condiciones
+                    </a>
+                </label>
+            </div>
+
+            <br><br>
+
+            <button class="registrarse" type="submit">Enviar</button>
+
+        </form>
+    </div>
+    <div class="tyc">
+        <a href="https://medpal.com.ec/terminosCondiciones">Términos y Condiciones</a>
+    </div>
+</body>
+
+<script>
+
+    function toggleNavbar() {
+      var navbarLinks = document.getElementById("navbarLinks");
+      navbarLinks.classList.toggle("show");
+    }
+
+    function carrusel() {
+        for (var i = 0; i < document.querySelectorAll(".features_app_elements").length; i++) {
+            document.querySelectorAll(".features_app_elements")[i].style.display = "flex";
+        }
+    }
+
+    document.querySelector("#carrbtn1").addEventListener("click", function () {
+        document.querySelector("#carrbtn2").style.backgroundColor = "white";
+        document.querySelector("#carrbtn1").style.backgroundColor = "var(--main-yellow)";
+        for (var j = 0; j < document.querySelectorAll(".features_app_elements").length; j++) {
+            document.querySelectorAll(".features_app_elements")[j].style.display = "flex";
+        };
+        for (var j = 0; j < document.querySelectorAll(".features_app_elements").length; j++) {
+            document.querySelectorAll(".features_web_elements")[j].style.display = "none";
+        };
+    })
+
+    document.querySelector("#carrbtn2").addEventListener("click", function () {
+        document.querySelector("#carrbtn2").style.backgroundColor = "var(--main-yellow)";
+        document.querySelector("#carrbtn1").style.backgroundColor = "white";
+        for (var k = 0; k < document.querySelectorAll(".features_web_elements").length; k++) {
+            document.querySelectorAll(".features_app_elements")[k].style.display = "none";
+        };
+        for (var k = 0; k < document.querySelectorAll(".features_app_elements").length; k++) {
+            document.querySelectorAll(".features_web_elements")[k].style.display = "flex";
+        };
+    })
+</script>
+
+</html>
