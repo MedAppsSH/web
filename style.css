@@ -755,7 +755,7 @@ input[type=password],
 input[type=phone],
 input[type=list],
     textarea {
-    width: 35vw;
+    width: 25vw;
     padding: 15px 0;
     min-width: 300px;
     box-sizing: border-box;
